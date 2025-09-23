@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="container">
+      <h1 class="title">🌍 Live Weather Anywhere</h1>
+      <p class="subtitle">Get real-time weather updates & forecasts with style</p>
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Enter city name..." />
+        <button id="searchBtn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weather Dashboard -->
+  <section class="dashboard">
+    <div class="weather-card">
+      <h2 id="location">Fetching location...</h2>
+      <p id="date"></p>
+
+      <div class="current-weather">
+        <img id="weatherIcon" alt="Weather Icon" />
+        <div>
+          <h3 id="temperature">--°C</h3>
+          <p id="condition">---</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="forecast">
+      <h2>3-Day Forecast</h2>
+      <div id="forecastContainer" class="forecast-grid"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>See Your City's Weather <a href="" target="_blank"></a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
